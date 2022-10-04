@@ -5,8 +5,9 @@ services:
     image: itzg/minecraft-bedrock-server
     environment:
       EULA: "TRUE"
-      GAMEMODE: adventure
+      GAMEMODE: creative
       DIFFICULTY: normal
+      allow-cheats: "true"
     ports:
       - 19132:19132/udp
     volumes:
