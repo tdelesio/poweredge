@@ -7,11 +7,11 @@ services:
       EULA: "TRUE"
       GAMEMODE: creative
       DIFFICULTY: normal
-      allow-cheats: "true"
+      ALLOW-CHEATS: true
     ports:
       - 19132:19132/udp
     volumes:
-      - bds:/data
+      - /mindcraft:/data
     stdin_open: true
     tty: true
 
